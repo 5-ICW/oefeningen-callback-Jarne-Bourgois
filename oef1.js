@@ -7,10 +7,11 @@
  */
 
 function doIets(text, callback) {
-  // Vul de functie in
+  return callback(text)
 }
 
 // Verwacht resultaat: "HALLO WERELD"
-doSomething("Hallo wereld", function (resultaat) {
-  console.log(resultaat);
+const uitkomst = doIets("Hallo wereld", function (res) {
+  return res.toUpperCase()
 });
+console.log(uitkomst);
