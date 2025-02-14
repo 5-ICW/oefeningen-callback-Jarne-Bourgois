@@ -4,10 +4,17 @@
  */
 
 function processArray(arr, callback) {
-  // Vul de functie in
+ return callback(arr)
+ 
+  
 }
 
 // Verwacht resultaat: [2, 4, 6, 8, 10]
-processArray([1, 2, 3, 4, 5], function (num) {
-  return num * 2;
+const uitkomst = processArray([1, 2, 3, 4, 5], function (num) {
+  for (let i = 0; i < num.length; i++) {
+    num[i] *= 2
+  }
+  return num ;
 });
+
+console.log(uitkomst);

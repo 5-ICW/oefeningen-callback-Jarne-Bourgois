@@ -4,10 +4,10 @@
  */
 
 function greet(name, callback) {
-  // Vul aan
+  callback(name)
 }
 
 // Verwacht resultaat: "Hallo, Sam!"
 greet("Sam", function (message) {
-  console.log(message);
+  console.log(`Hallo, ${message}!`);
 });

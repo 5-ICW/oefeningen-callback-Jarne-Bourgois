@@ -4,10 +4,10 @@
  */
 
 function doubleNumber(num, callback) {
-  // Vul aan
+  callback(num)
 }
 
 // Verwacht resultaat: 10
-doubleNumber(5, function (result) {
-  console.log(result);
+doubleNumber(5, function (res) {
+  console.log(res*2);
 });
